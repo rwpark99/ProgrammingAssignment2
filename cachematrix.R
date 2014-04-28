@@ -9,10 +9,11 @@
 ## -> To hold the calculation results in memory without noticing it.
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
-        # set <- function(y) {
-        #        x <<- y
-        #        #m <<- NULL
-        #}
+        # Set function is not necessary for this assignment.
+                # set <- function(y) {           
+                # x <<- y
+                # m <<- NULL
+                # }
         get <- function() {
                 x
         }
@@ -22,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
         getInverse <- function() {
                 m
         }  
-        list(#set = set, 
+        list(   #set = set, #not necessary for this assignment.
                 get = get, 
                 setInverse = setInverse,
                 getInverse = getInverse)
